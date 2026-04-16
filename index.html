@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado Futbolero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Ahorcado: Cracks del Fútbol</h1>
+        
+        <div class="main-content">
+            <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+            
+            <div class="word-display" id="wordDisplay"></div>
+            
+            <div class="input-section">
+                <p>Intentos restantes: <span id="attempts">6</span></p>
+                <div class="guess-container">
+                    <input type="text" id="letterInput" maxlength="1" placeholder="Letra">
+                    <button id="guessButton">Probar Letra</button>
+                </div>
+                <div class="guess-full-word">
+                    <input type="text" id="wordInput" placeholder="¿Sabes el jugador?">
+                    <button id="solveButton">Resolver</button>
+                </div>
+            </div>
+
+            <div class="used-letters">
+                Letras usadas: <span id="usedLettersText"></span>
+            </div>
+            
+            <button id="resetButton" class="reset-btn">Nuevo Juego</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
