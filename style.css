@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a472a; /* Verde campo de fútbol */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+#hangmanCanvas {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.word-display {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input-section {
+    margin-bottom: 1.5rem;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#letterInput {
+    width: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d4ac0d;
+}
+
+.guess-full-word {
+    margin-top: 15px;
+}
+
+.guess-full-word input {
+    width: 180px;
+}
+
+.used-letters {
+    margin-top: 10px;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    background-color: #e74c3c;
+    color: white;
+}
